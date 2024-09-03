@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional 3D Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.scss" />
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+    <div
+      id="scene-container"
+      class="fixed top-0 left-0 w-full h-full z-0"
+    ></div>
+
+    <nav
+      class="bg-white bg-opacity-80 fixed w-full z-10 top-0 left-0 border-b border-gray-200"
+    >
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex space-x-4">
+            <div
+              class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900"
+            >
+              <span class="font-bold">Muhammad Abdul Hafidz</span>
+            </div>
+          </div>
+          <div class="flex items-center space-x-1">
+            <a href="#about" class="py-5 px-3 text-gray-700 hover:text-gray-900"
+              >About</a
+            >
+            <a
+              href="#projects"
+              class="py-5 px-3 text-gray-700 hover:text-gray-900"
+              >Projects</a
+            >
+            <a
+              href="#contact"
+              class="py-5 px-3 text-gray-700 hover:text-gray-900"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="relative z-10 pt-16">
+      <header class="bg-gray-50 bg-opacity-75 py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1
+            class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"
+          >
+            M Abdul Hafidz
+          </h1>
+          <p class="mt-6 text-xl text-gray-500 max-w-3xl">Software Engineer</p>
+        </div>
+      </header>
+
+      <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="about" class="py-20">
+          <h2 class="text-3xl font-extrabold text-gray-900">About Me</h2>
+          <p class="mt-4 text-lg text-gray-500">
+            I'm a Software Engineer. I initially chose to learn coding because I
+            was inspired by my sibling, who motivated me. About two years ago, I
+            started learning from scratch at school, covering topics like HTML,
+            CSS, JavaScript, and Bootstrap in the first year. I also learned
+            design using Photoshop and some basic database concepts. In the
+            second year, 2023, I began exploring new things at school, like PHP
+            and Laravel. Midway through the year, there was an opportunity for a
+            three-month internship, and I interned at PT. LSKK in Bandung.
+            There, I learned more about the React.js framework and Tailwind CSS.
+            As I entered the third year, I became more serious about coding.
+            Although coding can be exhausting at times, finding solutions to
+            bugs can be incredibly satisfying. During this third year, I delved
+            deeper into Laravel and also explored the SvelteKit framework. In
+            the second year, I had already learned about MongoDB, PostgreSQL,
+            Docker, and Node.js, but those were not part of the school's
+            curriculum, which focused more on Laravel. Despite the challenges,
+            I've completed quite a few projects and found the experience
+            rewarding. My strong motivation serves as a foundation to keep
+            pushing forward because learning has no limits.
+          </p>
+        </section>
+
+        <section id="projects" class="py-20">
+          <h2 class="text-3xl font-extrabold text-gray-900">My Projects</h2>
+          <div class="mt-8 grid gap-8 sm:grid-cols-2">
+            <div
+              class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105"
+            >
+              <img
+                src="/assets/images/binari.jpeg"
+                alt="Project 1"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-lg font-semibold text-gray-900">Project 1</h3>
+                <p class="mt-2 text-gray-600">
+                  Description of project 1. This project showcases my skills in
+                  React js
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105"
+            >
+              <img
+                src="assets/images/coffeefidz.png"
+                alt="Project 2"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-lg font-semibold text-gray-900">Project 2</h3>
+                <p class="mt-2 text-gray-600">
+                  Description of project 2. In this project, I focused on
+                  Laravel
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="py-20">
+          <h2 class="text-3xl font-extrabold text-gray-900">Contact Me</h2>
+          <p class="mt-4 text-lg text-gray-500">
+            I'm always open to new opportunities and collaborations. Feel free
+            to reach out!
+          </p>
+          <div class="mt-8 flex space-x-4">
+            <a
+              href="mailto:hafidz.hfidz7534@gmail.com"
+              class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-700 transition duration-300"
+              >Email Me</a
+            >
+            <a
+              href="www.linkedin.com/in/m-abdul-hafidz-0095682a7"
+              class="bg-gray-200 text-gray-800 px-6 py-3 rounded-md hover:bg-gray-300 transition duration-300"
+              >LinkedIn</a
+            >
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-gray-50 border-t border-gray-200 py-12 mt-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p class="text-center text-gray-500">
+            &copy; 2024 M Abdul Hafidz. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
